@@ -17,10 +17,10 @@ export declare namespace IExperience {
 
   export interface Item {
     /** ### (직장)경험 명 */
-    title: string;
+    title?: string;
 
     /** ### (직장)역할 명 (or Subtitle) */
-    position: string;
+    position?: string;
 
     /**
      * ### (직장)경험 시작 일

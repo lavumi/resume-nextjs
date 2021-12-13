@@ -1,12 +1,12 @@
 {
   "name": "resume-nextjs",
-  "lastestUpdatedAt": "2021-09-01",
+  "lastestUpdatedAt": "2021-12-03",
   "version": "1.1.0",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env DEBUG=yosume:* next",
+    "dev": "cross-env DEBUG=yosume:* next -p 23333",
     "build": "next build",
     "prebuild": "npm install && npm run lint",
     "start": "next start",
@@ -18,25 +18,20 @@
     "lint": "eslint 'component/**/*' 'pages/**/*' 'payload/**/*' '*.ts' --fix",
     "typedoc": "typedoc --excludeExternals"
   },
-  "homepage": "https://uyu423.github.io/resume-nextjs",
+  "homepage": "https://resume.lavumi.net/",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/uyu423/resume-nextjs.git"
+    "type": "git"
   },
   "keywords": [
     "resume",
     "next"
   ],
   "author": {
-    "name": "Yowu Yu",
-    "email": "me@yowu.dev",
-    "url": "https://yowu.dev"
+    "name": "Lavumi",
+    "email": "me@lavu.me"
   },
   "contributors": [],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/uyu423/resume-nextjs/issues"
-  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -47,6 +42,7 @@
     "bootstrap": "^4.6.0",
     "chalk": "^4.1.2",
     "debug": "^4.3.2",
+    "express": "^4.17.1",
     "jquery": "^3.6.0",
     "luxon": "^1.28.0",
     "next": "^10.2.3",

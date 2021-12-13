@@ -5,10 +5,11 @@ const introduce: IIntroduce.Payload = {
   disable: false,
 
   contents: [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor. Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien. Proin bibendum non nibh eu aliquet. In sit amet arcu sed nisi tincidunt ultricies. Fusce magna tellus, egestas at pretium quis, rutrum et ante. Phasellus efficitur lectus felis, sed lacinia enim rhoncus ut. Sed id mi vitae neque aliquet porttitor. Fusce dignissim ipsum urna, at finibus lectus sodales ut. Nulla ut purus vestibulum, dapibus tellus consequat, porttitor purus. Nunc egestas tortor ut vehicula mollis.',
-    'Integer ut libero eu libero mattis rutrum at at urna. Integer non turpis ante. Suspendisse vestibulum odio id libero facilisis gravida. In ipsum est, pellentesque vestibulum tortor eu, bibendum imperdiet metus. Quisque ornare eget ex ut congue. Nam vel finibus sem. Phasellus id neque nibh. Nullam turpis velit, pharetra vitae mi non, bibendum maximus urna.',
+    '게임 클라이언트 개발자로 시작하여, 렌더링, 실시간 게임 서버, 웹서버 등 다양한 분야들을 시도해보고 있는 호기심 많은 개발자입니다.',
+    '주된 업무로 게임 클라이언트 개발을 하고 있으며, 최근 신규 프로젝트에서는 클라이언트 뿐만 아니라, 빌드 머신 세팅, 테스트 서버, 라이브 서버 같은 게임 서버 인프라 구축도 해보았습니다.',
+    '그 외 개인 서버를 운영하면서 서버 인프라에 대한 다양한 시도를 해보고 있습니다.',
   ],
-  sign: 'Love poem',
+  sign: 'Lavumi',
   // sign: packageJson.author.name,
   // latestUpdated: '2019-07-24',
   latestUpdated: lastestUpdatedAt,

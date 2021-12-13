@@ -1,66 +1,54 @@
 import { ISkill } from '../component/skill/ISkill';
 
 const backend: ISkill.Skill = {
-  category: 'Back-end',
+  category: 'Game Engine',
   items: [
     {
-      title: 'Node.js',
+      title: 'CocosCreator',
       level: 3,
     },
     {
-      title: 'AWS',
+      title: 'Cocos2d-x',
       level: 3,
     },
     {
-      title: 'PHP',
+      title: 'Cocos2d-js',
+      level: 3,
+    },
+    {
+      title: 'Unity',
       level: 2,
-    },
-    {
-      title: 'Java',
-      level: 1,
-    },
-    {
-      title: 'Python',
-      level: 1,
-    },
-    {
-      title: 'C/C++',
-      level: 1,
     },
   ],
 };
 
 const database: ISkill.Skill = {
-  category: 'Database',
+  category: 'Rendering Library',
   items: [
     {
-      title: 'MySQL',
-      level: 3,
-    },
-    {
-      title: 'Oracle',
+      title: 'openGL',
       level: 2,
     },
     {
-      title: 'Redis',
+      title: 'WebGL',
       level: 2,
     },
     {
-      title: 'MongoDB',
+      title: 'DirectX',
+      level: 2,
+    },
+    {
+      title: 'WebAssembly',
       level: 1,
     },
   ],
 };
 
 const frontend: ISkill.Skill = {
-  category: 'Front-end',
+  category: 'Server-side',
   items: [
     {
-      title: 'Next.js',
-      level: 2,
-    },
-    {
-      title: 'React.js',
+      title: 'Node.js',
       level: 2,
     },
     {
@@ -68,9 +56,17 @@ const frontend: ISkill.Skill = {
       level: 2,
     },
     {
-      title: 'HTML/CSS',
+      title: 'MYSQL',
       level: 2,
     },
+    {
+      title: 'PostgreSQL',
+      level: 1,
+    },
+    // {
+    //   title: 'HTML/CSS',
+    //   level: 1,
+    // }
   ],
 };
 
@@ -78,22 +74,19 @@ const etc: ISkill.Skill = {
   category: 'Etc',
   items: [
     {
-      title: 'Ubuntu',
-    },
-    {
-      title: 'Vim',
-    },
-    {
-      title: 'Security',
-    },
-    {
-      title: 'VS Code',
+      title: 'Linux(Ubuntu)',
     },
     {
       title: 'Jira',
     },
     {
       title: 'Confluence',
+    },
+    {
+      title: 'Jenkins',
+    },
+    {
+      title: 'Slack',
     },
   ],
 };

@@ -1,7 +1,7 @@
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faBell } from '@fortawesome/free-regular-svg-icons';
-import { faGithub, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import image from '../asset/_sample.jpg';
+import { faEnvelope, faAddressCard } from '@fortawesome/free-solid-svg-icons';
+// import { faBell } from '@fortawesome/free-regular-svg-icons';
+import { faGithub, faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import image from '../asset/profile.png';
 import { IProfile } from '../component/profile/IProfile';
 
 const profile: IProfile.Payload = {
@@ -10,40 +10,41 @@ const profile: IProfile.Payload = {
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
   image,
   name: {
-    title: 'Lorem ipsum',
-    small: '(LI)',
+    title: '김 도영',
+    small: '(DY)',
   },
   contact: [
     {
-      title: 'foo@bar.xyz',
-      link: '#',
+      title: 'me@lavumi.net',
+      link: 'mailto:me@lavumi.net',
       icon: faEnvelope,
     },
+    // {
+    //   title: 'Please contact me by email',
+    //   icon: faPhone,
+    //   badge: true,
+    // },
     {
-      title: 'Please contact me by email',
-      icon: faPhone,
-      badge: true,
-    },
-    {
-      title: 'https://github.com',
-      link: 'https://github.com/uyu423/resume-nextjs',
+      title: 'https://github.com/lavumi',
+      link: 'https://github.com/lavumi',
       icon: faGithub,
     },
     {
-      link: 'https://www.facebook.com/iu.loen',
-      icon: faFacebook,
+      title: 'https://lavumi.net/',
+      link: 'https://lavumi.net/',
+      icon: faHtml5,
     },
     {
-      title: 'YouTube',
-      link: 'https://www.youtube.com/channel/UC3SyT4_WLHzN7JmHQwKQZww',
-      // icon: faRss,
-      icon: faYoutube,
+      title: '서울시 강남구',
+      // link : 'https://lavumi.net/',
+      icon: faAddressCard,
     },
   ],
-  notice: {
-    title: "This resume is a sample page of 'https://github.com/uyu423/resume-nextjs'.",
-    icon: faBell,
-  },
+  // ,
+  // notice: {
+  //   title: "Email을 통해 연락해주시면 감사하겠습니다.",
+  //   icon: faBell,
+  // },
 };
 
 export default profile;
