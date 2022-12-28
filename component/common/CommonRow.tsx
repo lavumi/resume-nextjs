@@ -32,7 +32,7 @@ export function CommonRows({
         </Col>
         <Col sm={12} md={9}>
           {right.title ? <h4>{right.title}</h4> : ''}
-          {/* {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''} */}
+           {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
           {right.descriptions ? (
             <CommonDescription
               descriptions={right.descriptions}
