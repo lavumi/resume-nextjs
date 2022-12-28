@@ -4,6 +4,19 @@ const experience: IExperience.Payload = {
   disable: false,
   list: [
     {
+      title: 'CandiCode',
+      startedAt: '2022-09',
+      descriptions: ['비동기 게임 서버 개발', 'DevOps Setting', '앱서비스 개발'],
+      skillKeywords: ['Unity3D', '.Net Core', 'C#', 'MERN stack'],
+    },
+    {
+      title: 'VanillaCode',
+      startedAt: '2022-01',
+      endedAt: '2022-08',
+      descriptions: ['앱서비스 런칭', '코인 플랫폼 운영, 유지보수'],
+      skillKeywords: ['MERN stack', 'Java', 'web3', 'Etherium', 'AWS'],
+    },
+    {
       title: '플라이셔 (Flysher)',
       position: '클라이언트 개발자',
       startedAt: '2018-08',

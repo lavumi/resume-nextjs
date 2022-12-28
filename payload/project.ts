@@ -4,6 +4,35 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: '게임 서버 개발',
+      startedAt: '2022-09',
+      where: 'CandiCode',
+      descriptions: [{ content: '비동기 게임 서버 개발' }],
+    },
+    {
+      title: '코인 플랫폼 운영',
+      startedAt: '2022-02',
+      endedAt: '2022-08',
+      where: 'VanillaCode',
+      descriptions: [
+        { content: '코인 플랫폼 유지, 보수' },
+        { content: '이더리움 노드(geth) 운영' },
+        { content: '노드 모니터링, 알림 시스템 개발' },
+      ],
+    },
+    {
+      title: '모바일 앱서비스 런칭, 운영',
+      startedAt: '2022-01',
+      endedAt: '2022-08',
+      where: 'VanillaCode',
+      descriptions: [
+        { content: '대만 복권 예측번호 알림 앱 개발' },
+        { content: '클라이언트 구조 설계 및 팀원 관리???' },
+        { content: '서버 구조 설계 및 개발' },
+        { content: '네트워크 구조 설계 및 nCloud 서버 구축' },
+      ],
+    },
+    {
       title: 'No Pickles - pet escape',
       startedAt: '2020-11',
       endedAt: '2021-11',

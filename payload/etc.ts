@@ -11,7 +11,7 @@ const etc: IEtc.Payload = {
     },
     {
       title: 'IT Education Service Activities',
-      subTitle: 'Wrold Friends IT Volunteer',
+      subTitle: 'World Friends IT Volunteer',
       startedAt: '2013-07',
       endedAt: '2013-08',
     },

@@ -1,19 +1,19 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const backend: ISkill.Skill = {
-  category: 'Game Engine',
+const GameEngine: ISkill.Skill = {
+  category: 'Client Framework',
   items: [
     {
       title: 'CocosCreator',
       level: 3,
     },
     {
-      title: 'Cocos2d-x',
+      title: 'Cocos2d-x, Cocos2d-js',
       level: 3,
     },
     {
-      title: 'Cocos2d-js',
-      level: 3,
+      title: 'React-native',
+      level: 2,
     },
     {
       title: 'Unity',
@@ -22,7 +22,7 @@ const backend: ISkill.Skill = {
   ],
 };
 
-const database: ISkill.Skill = {
+const Rendering: ISkill.Skill = {
   category: 'Rendering Library',
   items: [
     {
@@ -44,24 +44,28 @@ const database: ISkill.Skill = {
   ],
 };
 
-const frontend: ISkill.Skill = {
+const Server: ISkill.Skill = {
   category: 'Server-side',
   items: [
     {
+      title: 'C# (.Net)',
+      level: 3,
+    },
+    {
       title: 'Node.js',
+      level: 3,
+    },
+    {
+      title: 'AWS',
+      level: 3,
+    },
+    {
+      title: 'Java (Spring)',
       level: 2,
     },
     {
-      title: 'javascript',
+      title: 'Mysql',
       level: 2,
-    },
-    {
-      title: 'MYSQL',
-      level: 2,
-    },
-    {
-      title: 'PostgreSQL',
-      level: 1,
     },
     // {
     //   title: 'HTML/CSS',
@@ -71,29 +75,24 @@ const frontend: ISkill.Skill = {
 };
 
 const etc: ISkill.Skill = {
-  category: 'Etc',
+  category: 'Devops',
   items: [
     {
       title: 'Linux(Ubuntu)',
     },
-    {
-      title: 'Jira',
-    },
-    {
-      title: 'Confluence',
-    },
+    { title: 'Docker' },
+    { title: 'Nginx' },
     {
       title: 'Jenkins',
     },
-    {
-      title: 'Slack',
-    },
+    { title: 'Redmine' },
+    { title: 'Wikijs' },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, database, frontend, etc],
+  skills: [Server, GameEngine, Rendering, etc],
   tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 
