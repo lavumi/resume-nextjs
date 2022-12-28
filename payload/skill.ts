@@ -48,15 +48,11 @@ const Server: ISkill.Skill = {
   category: 'Server-side',
   items: [
     {
-      title: 'C# (.Net)',
+      title: 'C# (.Net Core)',
       level: 3,
     },
     {
       title: 'Node.js',
-      level: 3,
-    },
-    {
-      title: 'AWS',
       level: 3,
     },
     {
@@ -75,8 +71,11 @@ const Server: ISkill.Skill = {
 };
 
 const etc: ISkill.Skill = {
-  category: 'Devops',
+  category: 'Infra',
   items: [
+    {
+      title: 'AWS',
+    },
     {
       title: 'Linux(Ubuntu)',
     },

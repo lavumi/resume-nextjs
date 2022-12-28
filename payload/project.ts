@@ -27,8 +27,7 @@ const project: IProject.Payload = {
       where: 'VanillaCode',
       descriptions: [
         { content: '대만 복권 예측번호 알림 앱 개발' },
-        { content: '클라이언트 구조 설계 및 팀원 관리???' },
-        { content: '서버 구조 설계 및 개발' },
+        { content: '리드 프로그래머 역할 수행' },
         { content: '네트워크 구조 설계 및 nCloud 서버 구축' },
       ],
     },

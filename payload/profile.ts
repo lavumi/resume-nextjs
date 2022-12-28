@@ -10,8 +10,8 @@ const profile: IProfile.Payload = {
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
   image,
   name: {
-    title: '김 도영',
-    small: '(DY)',
+    title: '김도영',
+    small: '(Lavumi)',
   },
   contact: [
     {
@@ -35,7 +35,8 @@ const profile: IProfile.Payload = {
       icon: faHtml5,
     },
     {
-      title: '서울시 강남구',
+      title: 'LinkedIn',
+      // title: '서울시 강남구',
       // link : 'https://lavumi.net/',
       icon: faAddressCard,
     },

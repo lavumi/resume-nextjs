@@ -21,12 +21,18 @@ export function CommonRows({
             <Col md={12}>
               <h4 style={Style.gray}>{left.title}</h4>
             </Col>
-            {left.subTitle ? <Col md={12}>{left.subTitle}</Col> : ''}
+            {left.subTitle ? (
+              <Col md={12}>
+                <i style={Style.gray}>{left.subTitle}</i>
+              </Col>
+            ) : (
+              ''
+            )}
           </Row>
         </Col>
         <Col sm={12} md={9}>
           {right.title ? <h4>{right.title}</h4> : ''}
-          {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''}
+          {/* {right.subTitle ? <i style={Style.gray}>{right.subTitle}</i> : ''} */}
           {right.descriptions ? (
             <CommonDescription
               descriptions={right.descriptions}
