@@ -14,10 +14,10 @@ export default function ExperienceRow({
       {index > 0 ? <hr /> : ''}
       <Row>
         <Col sm={12} md={3} className="text-md-right">
-          {createWorkingPeriod(item.startedAt, item.endedAt)}
+          {createWorkingPeriod(item.startedAt, item.endedAt, item.justEducation)}
         </Col>
         <Col sm={12} md={9}>
-          <h4>{item.title}</h4>
+          {item.justEducation ? '' : <h4>{item.title}</h4>}
           <i style={Style.gray}>{item.position}</i>
           <ul className="pt-3">
             {item.descriptions.map((description, descIndex) => (
@@ -54,7 +54,11 @@ function createSkillKeywords(skillKeywords?: string[]) {
   );
 }
 
-function createWorkingPeriod(startedAtString: string, endedAtString?: string) {
+function createWorkingPeriod(
+  startedAtString: string,
+  endedAtString?: string,
+  justEducation?: boolean,
+) {
   const DATE_FORMAT = Util.LUXON_DATE_FORMAT;
   const startedAt = DateTime.fromFormat(startedAtString, DATE_FORMAT.YYYY_LL);
 
@@ -90,7 +94,11 @@ function createWorkingPeriod(startedAtString: string, endedAtString?: string) {
         ) : (
           ''
         )}
-        <Badge color="info">{Util.getFormattingDuration(startedAt, endedAt)}</Badge>
+        {justEducation ? (
+          ''
+        ) : (
+          <Badge color="info">{Util.getFormattingDuration(startedAt, endedAt)}</Badge>
+        )}
       </Col>
     </Row>
   );

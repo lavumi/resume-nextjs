@@ -37,6 +37,7 @@ const experience: IExperience.Payload = {
         'SGA 온라인게임 통합과정 수료',
       ],
       skillKeywords: ['C++', 'DirectX'],
+      justEducation: true,
     },
     {
       title: '토키 스튜디오(Talki Studio)',

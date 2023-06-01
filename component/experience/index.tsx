@@ -56,10 +56,11 @@ function getFormattingExperienceTotalDuration(payload: IExperience.Payload) {
           ? DateTime.fromFormat(item.endedAt, Util.LUXON_DATE_FORMAT.YYYY_LL)
           : DateTime.local(),
         startedAt: DateTime.fromFormat(item.startedAt, Util.LUXON_DATE_FORMAT.YYYY_LL),
+        education: !!item.justEducation,
       };
     })
-    .map(({ endedAt, startedAt }) => {
-      return endedAt.plus({ month: 1 }).diff(startedAt);
+    .map(({ endedAt, startedAt, education }) => {
+      return education ? Duration.fromMillis(0) : endedAt.plus({ month: 1 }).diff(startedAt);
     });
 
   const totalExperience = durations.reduce((prev, cur) => prev.plus(cur), Duration.fromMillis(0));

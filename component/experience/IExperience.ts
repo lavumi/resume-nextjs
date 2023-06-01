@@ -54,5 +54,7 @@ export declare namespace IExperience {
      */
 
     skillKeywords?: string[];
+
+    justEducation?: boolean;
   }
 }
