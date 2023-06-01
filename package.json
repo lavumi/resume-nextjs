@@ -15,7 +15,7 @@
     "preexport": "npm run clean && npm run build",
     "postexport": "node shellwork.js",
     "clean": "npx rimraf docs .next",
-    "lint": "eslint 'component/**/*' 'pages/**/*' 'payload/**/*' '*.ts' --fix",
+    "lint": "eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" \"*.ts\" --fix",
     "typedoc": "typedoc --excludeExternals"
   },
   "homepage": "https://resume.lavumi.net/",
@@ -42,7 +42,6 @@
     "bootstrap": "^4.6.0",
     "chalk": "^4.1.2",
     "debug": "^4.3.2",
-    "express": "^4.17.1",
     "jquery": "^3.6.0",
     "luxon": "^1.28.0",
     "next": "^10.2.3",
@@ -51,7 +50,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "reactstrap": "^8.9.0",
-    "shelljs": "^0.8.4",
+    "shelljs": "^0.8.5",
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
@@ -77,7 +76,7 @@
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",
     "typedoc": "~0.19.2",
-    "typescript": "^4.4.2"
+    "typescript": "^4.6.3"
   },
   "resolutions": {
     "**/minimist": "^1.2.3"
