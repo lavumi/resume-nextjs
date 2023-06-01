@@ -5,6 +5,7 @@ const router = express.Router();
 
 
 app.use(express.static(path.join(__dirname, 'docs')));
+app.use(express.static(__dirname + '/static'));
 
 router.get('/',function(req,res){
   res.sendFile('index.html');
