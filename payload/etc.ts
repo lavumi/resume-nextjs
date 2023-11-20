@@ -5,20 +5,15 @@ const etc: IEtc.Payload = {
 
   list: [
     {
-      title: 'Capstone Design Contest',
-      subTitle: 'Grand Prize',
-      startedAt: '2015-05',
+      title: 'Featured on SuperTuxKart',
+      subTitle: "Steve & Oliver Baker's",
+      startedAt: '2016-07',
     },
     {
-      title: 'IT Education Service Activities',
-      subTitle: 'Wrold Friends IT Volunteer',
-      startedAt: '2013-07',
-      endedAt: '2013-08',
-    },
-    {
-      title: 'Information Olympiad',
-      subTitle: 'Silver Prize',
-      startedAt: '2008-05',
+      title: "Biting Linus Torvalds' Foot",
+      subTitle: 'Australia National Zoo & Aquarium',
+      startedAt: '1993-07',
+      endedAt: '1993-08',
     },
   ],
 };
