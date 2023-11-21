@@ -12,7 +12,7 @@ const project: IProject.Payload = {
         { content: '슬롯 게임 서버 개발 (C# ASP.NET)' },
         { content: '파시트 설계' },
         { content: '환수율 검증기 (C#)' },
-        { content: '타사 슬롯 분석 프로그램 (Go)'},
+        { content: '타사 슬롯 분석 프로그램 (Go)' },
         { content: '환수율 모니터링 시스템 (Node.js Express)' },
       ],
     },

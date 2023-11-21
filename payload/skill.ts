@@ -39,27 +39,27 @@ const Server: ISkill.Skill = {
     },
     {
       title: 'Go',
-      level:2,
+      level: 2,
     },
     {
       title: 'Rust',
-      level:2,
+      level: 2,
     },
     {
       title: 'HTML/CSS',
       level: 1,
-    }
+    },
   ],
 };
 
 const etc: ISkill.Skill = {
   category: 'Infra',
   items: [
-    {title: 'AWS',},
-    {title: 'Linux(Ubuntu)',},
+    { title: 'AWS' },
+    { title: 'Linux(Ubuntu)' },
     { title: 'Docker' },
     { title: 'Nginx' },
-    {title: 'Jenkins',},
+    { title: 'Jenkins' },
     { title: 'Redmine' },
     // { title: 'Wikijs' },
   ],
