@@ -4,10 +4,31 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
-      title: '게임 서버 개발',
+      title: '슬롯 게임',
       startedAt: '2022-09',
+      endedAt: '2023-10',
       where: 'CandiCode',
-      descriptions: [{ content: '비동기 게임 서버 개발' }],
+      descriptions: [
+        { content: '슬롯 게임 서버 개발 (C# ASP.NET)' },
+        { content: '파시트 설계' },
+        { content: '환수율 검증기 (C#)' },
+        { content: '타사 슬롯 분석 프로그램 (Go)'},
+        { content: '환수율 모니터링 시스템 (Node.js Express)' },
+      ],
+    },
+    {
+      title: 'Crush Project',
+      startedAt: '2022-09',
+      endedAt: '2023-10',
+      where: 'CandiCode',
+      descriptions: [{ content: '플래폼 서버 개발 (C# ASP.NET)' }],
+    },
+    {
+      title: 'Office Infra',
+      startedAt: '2022-09',
+      endedAt: '2023-10',
+      where: 'CandiCode',
+      descriptions: [{ content: 'Redmine, Mentis (Docker)' }],
     },
     {
       title: '코인 플랫폼 운영',

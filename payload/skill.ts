@@ -1,30 +1,12 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const GameEngine: ISkill.Skill = {
-  category: 'Client Framework',
-  items: [
-    {
-      title: 'CocosCreator',
-      level: 3,
-    },
-    {
-      title: 'Cocos2d-x, Cocos2d-js',
-      level: 3,
-    },
-    {
-      title: 'React-native',
-      level: 2,
-    },
-    {
-      title: 'Unity',
-      level: 2,
-    },
-  ],
-};
-
 const Rendering: ISkill.Skill = {
   category: 'Rendering Library',
   items: [
+    {
+      title: 'wgpu',
+      level: 2,
+    },
     {
       title: 'openGL',
       level: 2,
@@ -45,53 +27,47 @@ const Rendering: ISkill.Skill = {
 };
 
 const Server: ISkill.Skill = {
-  category: 'Server-side',
+  category: 'Languages',
   items: [
     {
       title: 'C# (.Net Core)',
       level: 3,
     },
     {
-      title: 'Node.js',
+      title: 'Javascript (Node.js)',
       level: 3,
     },
     {
-      title: 'Java (Spring)',
-      level: 2,
+      title: 'Go',
+      level:2,
     },
     {
-      title: 'Mysql',
-      level: 2,
+      title: 'Rust',
+      level:2,
     },
-    // {
-    //   title: 'HTML/CSS',
-    //   level: 1,
-    // }
+    {
+      title: 'HTML/CSS',
+      level: 1,
+    }
   ],
 };
 
 const etc: ISkill.Skill = {
   category: 'Infra',
   items: [
-    {
-      title: 'AWS',
-    },
-    {
-      title: 'Linux(Ubuntu)',
-    },
+    {title: 'AWS',},
+    {title: 'Linux(Ubuntu)',},
     { title: 'Docker' },
     { title: 'Nginx' },
-    {
-      title: 'Jenkins',
-    },
+    {title: 'Jenkins',},
     { title: 'Redmine' },
-    { title: 'Wikijs' },
+    // { title: 'Wikijs' },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [Server, GameEngine, Rendering, etc],
+  skills: [Server, Rendering, etc],
   tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 

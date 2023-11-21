@@ -1,6 +1,6 @@
 {
   "name": "resume-nextjs",
-  "lastestUpdatedAt": "2022-12-28",
+  "lastestUpdatedAt": "2023-11-21",
   "version": "1.2.0",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "prebuild": "npm install && npm run lint",
     "start": "next start",
     "export:with-typedoc": "npm run export && npm run typedoc",
-    "export": "cross-env NODE_ENV=production next export --outdir docs/ --force",
+    "export": "cross-env NODE_ENV=production next export --outdir docs/",
     "preexport": "npm run clean && npm run build",
     "postexport": "node shellwork.js",
     "clean": "npx rimraf docs .next",
