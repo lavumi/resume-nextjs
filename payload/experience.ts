@@ -6,6 +6,7 @@ const experience: IExperience.Payload = {
     {
       title: 'CandiCode',
       startedAt: '2022-09',
+      endedAt: '2023-11',
       descriptions: ['슬롯 게임 서버 개발', '사내 서버 세팅', '앱서비스 개발'],
       skillKeywords: ['.Net Core', 'C#', 'MERN stack', 'Docker', 'Go'],
     },
