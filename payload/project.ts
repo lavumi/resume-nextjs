@@ -24,13 +24,6 @@ const project: IProject.Payload = {
       descriptions: [{ content: '플래폼 서버 개발 (C# ASP.NET)' }],
     },
     {
-      title: 'Office Infra',
-      startedAt: '2022-09',
-      endedAt: '2023-10',
-      where: 'CandiCode',
-      descriptions: [{ content: 'Redmine, Mentis (Docker)' }],
-    },
-    {
       title: '코인 플랫폼 운영',
       startedAt: '2022-02',
       endedAt: '2022-08',

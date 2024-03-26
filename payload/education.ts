@@ -4,11 +4,18 @@ const education: IEducation.Payload = {
   disable: false,
 
   list: [
+
     {
       title: '평생교육진흥원 컴퓨터 과학',
       subTitle: 'Completion',
       startedAt: '2017-08',
       endedAt: '2018-02',
+    },
+    {
+      title: 'SGA 온라인 게임 통합과정',
+      subTitle: 'Completion',
+      startedAt: '2017-06',
+      endedAt: '2018-02'
     },
     {
       title: '한양대학교 의학과',

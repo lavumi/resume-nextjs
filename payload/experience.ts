@@ -7,7 +7,7 @@ const experience: IExperience.Payload = {
       title: 'CandiCode',
       startedAt: '2022-09',
       endedAt: '2023-11',
-      descriptions: ['슬롯 게임 서버 개발', '사내 서버 세팅', '앱서비스 개발'],
+      descriptions: ['슬롯 게임 서버 개발', '앱서비스 개발'],
       skillKeywords: ['.Net Core', 'C#', 'MERN stack', 'Docker', 'Go'],
     },
     {
@@ -29,17 +29,17 @@ const experience: IExperience.Payload = {
       ],
       skillKeywords: ['Node.js', 'TypeScript', 'Cocos2d-x', 'javascript', 'Cocos Creator'],
     },
-    {
-      startedAt: '2016-05',
-      endedAt: '2018-05',
-      descriptions: [
-        '독학사 컴퓨터 과학 학사 취득',
-        'DirectX 를 사용하여 렌더링 공부, 개발',
-        'SGA 온라인게임 통합과정 수료',
-      ],
-      skillKeywords: ['C++', 'DirectX'],
-      justEducation: true,
-    },
+    // {
+    //   startedAt: '2016-05',
+    //   endedAt: '2018-05',
+    //   descriptions: [
+    //     '독학사 컴퓨터 과학 학사 취득',
+    //     'DirectX 를 사용하여 렌더링 공부, 개발',
+    //     'SGA 온라인게임 통합과정 수료',
+    //   ],
+    //   skillKeywords: ['C++', 'DirectX'],
+    //   justEducation: true,
+    // },
     {
       title: '토키 스튜디오(Talki Studio)',
       position: '인턴',
