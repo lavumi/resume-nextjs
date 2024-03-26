@@ -5,6 +5,7 @@ const experience: IExperience.Payload = {
   list: [
     {
       title: 'CandiCode',
+      position : '시니어 서버 프로그래머',
       startedAt: '2022-09',
       endedAt: '2023-11',
       descriptions: ['슬롯 게임 서버 개발', '앱서비스 개발'],
@@ -12,6 +13,7 @@ const experience: IExperience.Payload = {
     },
     {
       title: 'VanillaCode',
+      position : '리드 개발자',
       startedAt: '2022-01',
       endedAt: '2022-08',
       descriptions: ['앱서비스 런칭', '코인 플랫폼 운영, 유지보수'],
