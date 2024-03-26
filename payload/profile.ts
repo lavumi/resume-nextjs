@@ -37,7 +37,7 @@ const profile: IProfile.Payload = {
     {
       title: 'LinkedIn',
       // title: '서울시 강남구',
-      // link : 'https://lavumi.net/',
+      link : 'https://www.linkedin.com/in/doyoung-kim-3a933b227/',
       icon: faAddressCard,
     },
   ],
