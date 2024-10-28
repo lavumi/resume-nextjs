@@ -17,7 +17,7 @@ import { Style } from '../component/common/Style';
 import Payload from '../payload';
 import { Article } from '../component/article';
 
-function Yosume() {
+function Resume() {
   return (
     <>
       <NextSeo {...Payload._global.seo} />
@@ -41,4 +41,4 @@ function Yosume() {
   );
 }
 
-export default Yosume;
+export default Resume;

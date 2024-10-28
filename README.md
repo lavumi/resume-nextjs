@@ -6,8 +6,6 @@
   <a href="https://app.codacy.com/manual/uyu423/resume-nextjs?utm_source=github.com&utm_medium=referral&utm_content=uyu423/resume-nextjs&utm_campaign=Badge_Grade_Dashboard"><img src="https://api.codacy.com/project/badge/Grade/fe3253d51d544a2a971b637ed1570ac7" alt="Codacy Badge"/></a>
   <a href="https://codeclimate.com/github/uyu423/resume-nextjs/maintainability"><img src="https://api.codeclimate.com/v1/badges/19edd90e9309634ee66a/maintainability" alt="Maintainability"/></a>
   <br/>
-  <a href="https://david-dm.org/uyu423/resume-nextjs"><img src="https://david-dm.org/uyu423/resume-nextjs/status.svg" alt="dependencies Status"/></a>
-  <a href="https://david-dm.org/uyu423/resume-nextjs?type=dev"><img src="https://david-dm.org/uyu423/resume-nextjs/dev-status.svg" alt="devDependencies Status"/></a>
 </div>
 
 ## Introduce
@@ -17,6 +15,20 @@
 - 사실 https://github.com/uyu423/resume-legacy 를 Next.js 로 포팅한 것.
 - Sample: https://uyu423.github.io/resume-nextjs
   - 더 많은 예제는 [EXAMPLE.md](https://github.com/uyu423/resume-nextjs/blob/master/EXAMPLE.md) 를 참고한다.
+
+## Contributors
+
+- [Yowu (uyu423)](https://github.com/uyu423)
+- [Dal-ya](https://github.com/Dal-ya)
+- [Taeyeong Kim (lizard-kim)](https://github.com/lizard-kim)
+- [Taeyang Jin (heli-os)](https://github.com/heli-os)
+- [Hyogeun Oh (Zerohertz)](https://github.com/Zerohertz)
+
+## Requirements
+
+- Node.js > 18
+  - Node.js 18 버전 이상부터 발생하는 `ERR_OSSL_EVP_UNSUPPORTED` 이슈를 회피하기 위해 `NODE_OPTIONS=--openssl-legacy-provider` 옵션이 적용되어 있습니다.
+  - 가급적 Node.js 버전 18 이상에서 테스트하기를 권장하며 가급적 `.nvmrc` 에 기재된 Node.js 버전 사용을 권고합니다.
 
 ## Install
 
@@ -56,7 +68,7 @@ npm run dev
 
 #### Profile
 
-- 프로플 사진, 이름, 연락수단, 약간의 공지사항 영역
+- 프로필 사진, 이름, 연락수단, 약간의 공지사항 영역
 - TypeDoc: [IProfile.Payload](https://uyu423.github.io/resume-nextjs/typedoc/interfaces/iprofile.payload.html)
 - TS Sample: [payload/profile.ts](https://github.com/uyu423/resume-nextjs/blob/master/payload/profile.ts)
 
@@ -155,3 +167,5 @@ npm run export
 - Section 의 순서는 어떻게 조절하나요?
   - 현재는 `pages/index.tsx` 에서 직접 렌더링 순서를 변경하는 수 밖에 없습니다.
   - 데이터나 `_global` payload 로 핸들링하는 방법을 고민 중입니다.
+- index.html 에서 이미지, CSS가 404 발생하는 경우
+  - https://github.com/uyu423/resume-nextjs/issues/37 참고

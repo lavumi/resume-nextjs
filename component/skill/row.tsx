@@ -1,5 +1,6 @@
-import { PropsWithChildren } from 'react';
-import { Row, Col, Badge } from 'reactstrap';
+import { Badge, Col, Row } from 'reactstrap';
+import React, { PropsWithChildren, useEffect, useState } from 'react';
+
 import { ISkill } from './ISkill';
 import { Style } from '../common/Style';
 import Util from '../common/Util';
@@ -8,6 +9,19 @@ export default function SkillRow({
   skill,
   index,
 }: PropsWithChildren<{ skill: ISkill.Skill; index: number }>) {
+  const [isMobileScreen, setIsMobileScreen] = useState(false);
+
+  useEffect(() => {
+    setIsMobileScreen(window.innerWidth < 768);
+    const handleResize = () => {
+      setIsMobileScreen(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div>
       {index > 0 ? <hr /> : ''}
@@ -17,14 +31,15 @@ export default function SkillRow({
         </Col>
         <Col sm={12} md={9}>
           {/* {skill.items.map((item) => JSON.stringify(item, null, 2))} */}
-          {createCalculatedSkillItems(skill.items)}
+          {createCalculatedSkillItems(skill.items, isMobileScreen)}{' '}
+          {/* isVerticalScreen을 인자로 전달 */}
         </Col>
       </Row>
     </div>
   );
 }
 
-function createCalculatedSkillItems(items: ISkill.Item[]) {
+function createCalculatedSkillItems(items: ISkill.Item[], isVerticalScreen: boolean) {
   const log = Util.debug('SkillRow:createCalculatedSkillItems');
 
   /**
@@ -43,6 +58,25 @@ function createCalculatedSkillItems(items: ISkill.Item[]) {
 
   log('origin', items, items.length, splitPoint);
   log('list', list);
+
+  if (isVerticalScreen) {
+    return (
+      <Row className="mt-2 mt-md-0">
+        <Col xs={12}>
+          <ul>
+            {items.map((skill, skillIndex) => {
+              return (
+                <li key={skillIndex.toString()}>
+                  {createBadge(skill.level)}
+                  {skill.title}
+                </li>
+              );
+            })}
+          </ul>
+        </Col>
+      </Row>
+    );
+  }
 
   return (
     <Row className="mt-2 mt-md-0">

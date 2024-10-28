@@ -1,15 +1,15 @@
 {
   "name": "resume-nextjs",
-  "lastestUpdatedAt": "2024-03-26",
-  "version": "1.2.0",
+  "lastestUpdatedAt": "2024-07-22",
+  "version": "1.2.4",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env DEBUG=yosume:* next -p 23333",
-    "build": "next build",
+    "dev": "cross-env DEBUG=yosume:* NODE_OPTIONS=--openssl-legacy-provider next",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider next build",
     "prebuild": "npm install && npm run lint",
-    "start": "next start",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider next start",
     "export:with-typedoc": "npm run export && npm run typedoc",
     "export": "cross-env NODE_ENV=production next export --outdir docs/",
     "preexport": "npm run clean && npm run build",
@@ -18,20 +18,25 @@
     "lint": "eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" \"*.ts\" --fix",
     "typedoc": "typedoc --excludeExternals"
   },
-  "homepage": "https://resume.lavumi.net/",
+  "homepage": "https://uyu423.github.io/resume-nextjs",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/uyu423/resume-nextjs.git"
   },
   "keywords": [
     "resume",
     "next"
   ],
   "author": {
-    "name": "Lavumi",
-    "email": "me@lavu.me"
+    "name": "Yowu Yu",
+    "email": "me@yowu.dev",
+    "url": "https://yowu.dev"
   },
   "contributors": [],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uyu423/resume-nextjs/issues"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -42,7 +47,6 @@
     "bootstrap": "^4.6.0",
     "chalk": "^4.1.2",
     "debug": "^4.3.2",
-    "express": "^4.18.2",
     "jquery": "^3.6.0",
     "luxon": "^1.28.0",
     "next": "^10.2.3",
@@ -76,8 +80,8 @@
     "eslint-plugin-react-hooks": "^2.5.1",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.2",
-    "typedoc": "^0.24.7",
-    "typescript": "^4.6.3"
+    "typedoc": "~0.19.2",
+    "typescript": "^4.9.5"
   },
   "resolutions": {
     "**/minimist": "^1.2.3"

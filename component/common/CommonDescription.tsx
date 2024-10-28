@@ -1,6 +1,7 @@
-import { PropsWithChildren, CSSProperties } from 'react';
-import { IRow } from './IRow';
+import { CSSProperties, PropsWithChildren } from 'react';
+
 import { HrefTargetBlank } from '.';
+import { IRow } from './IRow';
 
 /** Description Recusion Generator */
 export function CommonDescription({
@@ -12,6 +13,7 @@ export function CommonDescription({
       {descriptions ? (
         <ul className={option?.padding ? 'pt-2' : ''}>
           {descriptions.map((description, descIndex) => {
+            console.log('CommonDescription.tsx:16 :', description);
             return (
               <>
                 <Description description={description} key={descIndex.toString()} />
@@ -99,7 +101,12 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
         </li>
       );
     }
-    return <li style={getFontWeight(weight)}>{content}</li>;
+    return (
+      <>
+        <meta name="format-detection" content="telephone=no" />
+        <li style={getFontWeight(weight)}>{content}</li>
+      </>
+    );
   })();
 
   return component;
@@ -115,12 +122,17 @@ function getFontWeight(weight?: IRow.Description['weight']): CSSProperties {
   };
 }
 
-// Noto Sans KR Weights: 300, 400, 500, 700
+// Pretendard Weights: 100, 200, 300, 400, 500, 600, 700, 800, 900
 const fontWeight: Record<IRow.FontWeightType, number> = {
   DEFAULT: 300,
+  //
+  THIN: 100,
+  EXTRA_LIGHT: 200,
   LIGHT: 300,
-  REGULAR: 300,
+  REGULAR: 400,
   MEDIUM: 500,
-  // BOLD: 700,
-  BOLD: 500,
+  SEMI_BOLD: 600,
+  BOLD: 700,
+  EXTRA_BOLD: 800,
+  BLACK: 900,
 };

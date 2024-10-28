@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { NextComponentType } from 'next';
 
-export default function YosumeApp({
+export default function ResumeApp({
   Component,
   pageProps,
 }: {
