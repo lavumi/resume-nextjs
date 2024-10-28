@@ -4,13 +4,24 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: 'Labconnect',
+      startedAt: '2024-04',
+      where: 'Zipida',
+      descriptions: [
+        { content: '의료 기기 정보 통합 플랫폼' },
+        { content: '프론트 페이지 개발 (Next.js , Ant Design)' },
+        { content: 'Api Server, 타사 API 를 통한 데이터 관리 (FastAPI)' },
+        { content: 'Github Action을 통한 CI/CD 구축' },
+      ],
+    },
+    {
       title: '슬롯 게임',
       startedAt: '2022-09',
       endedAt: '2023-10',
       where: 'CandiCode',
       descriptions: [
         { content: '슬롯 게임 서버 개발 (C# ASP.NET)' },
-        { content: 'DB 설계 ( MariaDB )'},
+        { content: 'DB 설계 ( MariaDB )' },
         { content: '파시트 설계 및 가이드' },
         { content: '환수율 검증기 (C#)' },
         { content: '타사 슬롯 분석 프로그램 (Go)' },
@@ -75,10 +86,7 @@ const project: IProject.Payload = {
             { content: '애니메이션, 움직임 네트워크 동기화 객체' },
             { content: '인게임 로직' },
             { content: '씬 관리 시스템' },
-            // { content: '팝업 관리 시스템' },
             { content: '캐릭터 스킨 관리 시스템' },
-            // { content: '플레이어의 상황에 따라 실시간으로 변화하는 UI 구현' },
-            // { content: 'Landscape, Portrait view 동시 지원 UI 설계' },
             { content: '게임 화면 스크린샷 공유' },
             { content: '리플레이 기능' },
             { content: 'Facebook Instant game API(로그인, 결제, 포스팅, 친구 초대 등)' },

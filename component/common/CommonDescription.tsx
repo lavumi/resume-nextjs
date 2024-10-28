@@ -13,7 +13,6 @@ export function CommonDescription({
       {descriptions ? (
         <ul className={option?.padding ? 'pt-2' : ''}>
           {descriptions.map((description, descIndex) => {
-            console.log('CommonDescription.tsx:16 :', description);
             return (
               <>
                 <Description description={description} key={descIndex.toString()} />

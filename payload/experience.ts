@@ -4,8 +4,15 @@ const experience: IExperience.Payload = {
   disable: false,
   list: [
     {
+      title: 'Zipida',
+      position: '선임 개발자',
+      startedAt: '2024-04',
+      descriptions: ['의료 기기 정보 통합 플랫폼 개발, 운영'],
+      skillKeywords: ['Next.js', 'FastApi', 'Postgres', 'AWS ECS', 'Docker'],
+    },
+    {
       title: 'CandiCode',
-      position : '시니어 서버 프로그래머',
+      position: '시니어 서버 프로그래머',
       startedAt: '2022-09',
       endedAt: '2023-11',
       descriptions: ['슬롯 게임 서버 개발', '앱서비스 개발'],
@@ -13,7 +20,7 @@ const experience: IExperience.Payload = {
     },
     {
       title: 'VanillaCode',
-      position : '리드 개발자',
+      position: '리드 개발자',
       startedAt: '2022-01',
       endedAt: '2022-08',
       descriptions: ['앱서비스 런칭', '코인 플랫폼 운영, 유지보수'],

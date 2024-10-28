@@ -1,10 +1,10 @@
 import { ISkill } from '../component/skill/ISkill';
 
 const Rendering: ISkill.Skill = {
-  category: 'Rendering Library',
+  category: 'Rendering',
   items: [
     {
-      title: 'wgpu',
+      title: 'wgpu (Vulkan)',
       level: 2,
     },
     {
@@ -27,18 +27,26 @@ const Rendering: ISkill.Skill = {
 };
 
 const Server: ISkill.Skill = {
-  category: 'Languages',
+  category: 'Backend',
   items: [
     {
       title: 'C# (.Net Core)',
       level: 3,
     },
     {
-      title: 'Javascript (Node.js)',
+      title: 'Javascript (Express)',
       level: 3,
     },
     {
-      title: 'Go',
+      title: 'Go (Gin)',
+      level: 3,
+    },
+    {
+      title: 'Java (Spring Boot)',
+      level: 2,
+    },
+    {
+      title: 'Python (Fast API)',
       level: 2,
     },
     {
@@ -47,7 +55,25 @@ const Server: ISkill.Skill = {
     },
     {
       title: 'HTML/CSS',
-      level: 1,
+      level: 2,
+    },
+  ],
+};
+
+const Front: ISkill.Skill = {
+  category: 'Frontend',
+  items: [
+    {
+      title: 'Typescript (Next.js)',
+      level: 2,
+    },
+    {
+      title: 'Bootstrap',
+      level: 2,
+    },
+    {
+      title: 'HTML, CSS, Pure JS',
+      level: 2,
     },
   ],
 };
@@ -61,14 +87,14 @@ const etc: ISkill.Skill = {
     { title: 'Nginx' },
     { title: 'Jenkins' },
     { title: 'Redmine' },
-    // { title: 'Wikijs' },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [Server, Rendering, etc],
-  tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
+  skills: [Server, Front, Rendering, etc],
+  tooltip:
+    '1: 기본 문법 이해 (취미 수준)\n2: 기존 프레임워크 기반 개발 가능\n3: 프로젝트 설계 및 리드 가능',
 };
 
 export default skill;
