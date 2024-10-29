@@ -33,7 +33,12 @@ const project: IProject.Payload = {
       startedAt: '2022-09',
       endedAt: '2023-10',
       where: 'CandiCode',
-      descriptions: [{ content: '플래폼 서버 개발 (C# ASP.NET)' }],
+      descriptions: [
+        {
+          content: '플래폼 서버 개발 (C# ASP.NET)',
+          descriptions: [{ content: '친구 시스템' }, { content: '아바타 전시, 교환 시스템' }],
+        },
+      ],
     },
     {
       title: '코인 플랫폼 운영',
@@ -91,7 +96,6 @@ const project: IProject.Payload = {
             { content: '리플레이 기능' },
             { content: 'Facebook Instant game API(로그인, 결제, 포스팅, 친구 초대 등)' },
             { content: 'Asset bundle 을 사용하여 CDN 세팅' },
-            // { content: '//todo 상세 내용 다 적기 -- 그 외 모든 클라이언트 로직'},
           ],
         },
         {
